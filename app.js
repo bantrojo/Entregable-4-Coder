@@ -8,7 +8,7 @@ const app=express();
 app.use(express.urlencoded({extended:true}))
 app.use(express.json());
 app.use(express.static(__dirname +'/public'));
-app.use('/products',productsRouter);
+app.use('/api/products',productsRouter);
 /*
 let storage=multer.diskstorage({
     destination:function(req,file,cb){
